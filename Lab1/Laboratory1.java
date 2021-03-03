@@ -1,8 +1,6 @@
-package Lab1;
-
 import java.util.Scanner;
 
-public class Laboratory1{
+public class Laboratory1 {
 
     public static void main(String[] args) {
 
@@ -10,24 +8,24 @@ public class Laboratory1{
         int wordLen = -1;
         System.out.print("Enter line: ");
         String text = scan.nextLine();
-        text = text.replaceAll("\\!"," !");
-        text = text.replaceAll("\\."," .");
-        text = text.replaceAll("\\?"," ?");
-        text = text.replaceAll("\\,"," ,");
-        text = text.replaceAll("\\:"," :");
+        text = text.replaceAll("\\!", " !");
+        text = text.replaceAll("\\.", " .");
+        text = text.replaceAll("\\?", " ?");
+        text = text.replaceAll("\\,", " ,");
+        text = text.replaceAll("\\:", " :");
 
         do {
             System.out.print("Enter the length of the words to delete them from text: ");
-            if(scan.hasNextInt()) {
+            if (scan.hasNextInt()) {
                 wordLen = scan.nextInt();
-                if(wordLen <= 0) {
+                if (wordLen <= 0) {
                     System.out.println("Number must be > 0. Try again.");
                 }
-            }else {
-                scan.nextLine();//clear input buffer
+            } else {
+                scan.nextLine();  // clear input buffer
                 System.out.println("You must enter a number.Try again");
             }
-        }while(wordLen <= 0);
+        } while (wordLen <= 0);
         String[] strArr = text.split(" ");
         StringBuilder sb = new StringBuilder();
 

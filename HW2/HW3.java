@@ -9,7 +9,7 @@ class HW3{
         int num;
         System.out.print("Enter word: ");
         String word = scan.nextLine();
-        for(int i =0; i < word.length(); i++){
+        for(int i = 0; i < word.length(); i++){
             num = (int) word.charAt(i)+1;
             if (word.charAt(i)=='Z'){
                 num = 65;

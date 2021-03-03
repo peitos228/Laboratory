@@ -1,5 +1,3 @@
-package Lab1;
-
 import java.util.Scanner;
 
 public class Laboratory2 {
@@ -12,16 +10,16 @@ public class Laboratory2 {
         Scanner scan = new Scanner(System.in);
         do {
             System.out.print("Input number of strings: ");
-            if(scan.hasNextInt()) {
+            if (scan.hasNextInt()) {
                 numStrings = scan.nextInt();
-                if(numStrings <= 0) {
+                if (numStrings <= 0) {
                     System.out.println("Number must be > 0. Try again.");
                 }
-            }else {
-                scan.nextLine();//clear input buffer
+            } else {
+                scan.nextLine();  // clear input buffer
                 System.out.println("You must enter a number.Try again");
             }
-        }while(numStrings <= 0);
+        } while (numStrings <= 0);
         System.out.println("Input strings:");
         scan.nextLine();
         answer = scan.nextLine();

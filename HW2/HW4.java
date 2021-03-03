@@ -7,7 +7,7 @@ class HW4 {
         Scanner scan = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
         int[] array = new int[10];
-        System.out.println("Enter 10 numberRS:");
+        System.out.println("Enter 10 numberRs:");
         for (int i = 0; i < 10; i++) {
             int num;
             do {
