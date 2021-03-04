@@ -15,6 +15,15 @@ public class Laboratory1 {
         text = text.replaceAll("\\?", " ?");
         text = text.replaceAll("\\,", " ,");
         text = text.replaceAll("\\:", " :");
+        text = text.replaceAll("\\@", " @");
+        text = text.replaceAll("\\#", " #");
+        text = text.replaceAll("\\$", " $");
+        text = text.replaceAll("\\№", " №");
+        text = text.replaceAll("\\%", " %");
+        text = text.replaceAll("\\^", " ^");
+        text = text.replaceAll("\\&", " &");
+        text = text.replaceAll("\\*", " *");
+        text = text.replaceAll("\\;", " ;");
 
         do {
             System.out.print("Enter the length of the words to delete them from text: ");
