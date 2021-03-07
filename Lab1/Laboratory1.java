@@ -1,5 +1,3 @@
-package Lab1;
-
 import java.util.Scanner;
 
 public class Laboratory1 {
@@ -18,7 +16,6 @@ public class Laboratory1 {
         text = text.replaceAll("\\@", " @");
         text = text.replaceAll("\\#", " #");
         text = text.replaceAll("\\$", " $");
-        text = text.replaceAll("\\№", " №");
         text = text.replaceAll("\\%", " %");
         text = text.replaceAll("\\^", " ^");
         text = text.replaceAll("\\&", " &");
@@ -38,15 +35,18 @@ public class Laboratory1 {
             }
         } while (wordLen <= 0);
         String[] strArr = text.split(" ");
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(" ");
 
         for (String word : strArr) {
             char first = word.charAt(0);
             if (!((word.length() == wordLen) && ((first != 'a') && (first != 'e') && (first != 'i') && (first != 'o') && (first != 'u') && (first != 'y')))) {
-                sb.append(word).append(' ');
+                if (word.length() == 1 && !Character.isLetterOrDigit(word.charAt(0))) {
+                    sb.setLength(sb.length() - 1);
+                }
+                sb.append(word).append(" ");
             }
         }
-        System.out.print(sb.toString());
+        System.out.print(sb.toString().trim());
         scan.close();
     }
 }
