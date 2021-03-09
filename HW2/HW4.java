@@ -18,7 +18,7 @@ class HW4 {
             } while (num > 9 || num < 0);
         }
         for (int i = 0; i < 10; i++) {
-            sb.append(String.valueOf((char) (array[i] + 65)));
+            sb.append((char) (array[i] + 65));
         }
         System.out.print("Output string: ");
         System.out.println(sb.toString());
