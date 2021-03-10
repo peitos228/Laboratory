@@ -20,7 +20,7 @@ class HW3{
             else if(word.charAt(i)==' ') {
                 num = 32;
             }
-            sb.append(String.valueOf((char)(num)));
+            sb.append((char)(num));
         }
         System.out.print("Update out: ");
         System.out.println(sb.toString());

@@ -2,16 +2,16 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Uuid {
+public class StringCheckReg {
     public static void main(String[] args) {    
         Scanner scan = new Scanner(System.in);
-        System.out.print("Введите UUID: ");
+        System.out.print("Введите строку для проверки на совпадение: ");
         String text = scan.nextLine();
-        Pattern pattern = Pattern.compile("^[1-9a-f][0-9a-f]{7}(-([1-9]\\d*|[a-f]){3}){2}-[1-9a-f]{4}-[0-9a-f]{12}$");
+        Pattern pattern = Pattern.compile("^abcdefghijklmnopqrstuv18340$");
         Matcher matcher = pattern.matcher(text);
-        if (matcher.find()) {   
+        if (matcher.find()) {
             System.out.println("true");
-        } else {    
+        } else {
             System.out.println("false");
         }
         scan.close();
