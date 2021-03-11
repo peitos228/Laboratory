@@ -1,8 +1,12 @@
 package shapes;
 
 public class Rectangle extends Shape{
-    int x1, y1, x2, y2, x3, y3, x4, y4;
+    String coordinates;
     String name = "Прямоугольник";
+
+    public Rectangle(String coordinates){
+        this.coordinates = coordinates;
+    }
 
     public void draw(){
         System.out.println("Нарисовал " + name);
