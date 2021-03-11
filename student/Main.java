@@ -35,7 +35,7 @@ public class Main {
                     if (scan.hasNextInt()) {
                         marks[j] = scan.nextInt();
                         if (marks[j] <= 0) {
-                            System.out.println("Оценка должна быть > 0. Попробуйте снова.");
+                            System.out.println("Оценка должна быть в пределах от 0 до 10. Попробуйте снова.");
                         }
                     } else {
                         scan.nextLine(); // clear input buffer

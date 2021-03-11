@@ -9,9 +9,9 @@ public class StringCheckReg {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите строку для проверки на совпадение: ");
         String text = scan.nextLine();
-        Pattern pattern = Pattern.compile("^abcdefghijklmnopqrstuv18340$");
-        Matcher matcher = pattern.matcher(text);
-        if (matcher.find()) {
+        Pattern patt = Pattern.compile("^abcdefghijklmnopqrstuv18340$");
+        Matcher match = patt.matcher(text);
+        if (match.find()) {
             System.out.println("true");
         } else {
             System.out.println("false");
