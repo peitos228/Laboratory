@@ -14,21 +14,22 @@ public class Student {
         this.name = name;
         this.group = group;
         this.marks = marks;
-        for (int mark : marks) {
+        for (int mark: marks) {
             if (mark < 9) {
                 clever = false;
+                break;
             }
         }
     }
 
-    public void outInfo() {
-        System.out.println("Имя студента: " + name + ", группа студента: " + group + ", оценки студента: "
-                + Arrays.toString(marks));
+    public void printInfo() {
+        System.out.println("Имя студента: " + name + ", группа студента: " + group + ", оценки студента: " +
+            Arrays.toString(marks));
     }
 
-    public void goodStudent(){
+    public void printGoodStudent() {
         if (clever)
-            System.out.println("Имя студента: " + name + ", группа студента: " + group + ", оценки студента: "
-                    + Arrays.toString(marks));
+            System.out.println("Имя студента: " + name + ", группа студента: " + group + ", оценки студента: " +
+                Arrays.toString(marks));
     }
 }
