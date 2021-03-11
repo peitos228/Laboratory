@@ -9,7 +9,7 @@ public class UuidReg {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите UUID: ");
         String text = scan.nextLine();
-        Pattern pattern = Pattern.compile("^[1-9a-f][0-9a-f]{7}(-([1-9]\\d*|[a-f]){3}){2}-[1-9a-f]{4}-[0-9a-f]{12}$");
+        Pattern pattern = Pattern.compile("^[0-9a-f][0-9a-f]{7}(-([0-9a-f]){4}){3}-[0-9a-f]{12}$");
         Matcher matcher = pattern.matcher(text);
         if (matcher.find()) {   
             System.out.println("true");
