@@ -1,10 +1,8 @@
 package shapes;
 
-public abstract class Shape implements Circle, Rectangle {
+public abstract class Shape {
     
     String color;
 
-    public void draw(){
-        System.out.println("Нарисовал.");
-    }
+    public abstract void draw();
 }
